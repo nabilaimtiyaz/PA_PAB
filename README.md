@@ -249,6 +249,12 @@ Aplikasi ini menggunakan berbagai widget Flutter untuk membangun UI yang respons
 * **Feedback**: `Get.snackbar` untuk menampilkan pesan sukses/gagal pada proses update profil dan voucher.
 
 ---
+## 🔍 Tampilan Aplikasi
+ 
+---
+ ### 1. Register Page
+
+ 
 
 ## 📂 Struktur Folder / Package
 Proyek ini menggunakan pola arsitektur yang terorganisir:
