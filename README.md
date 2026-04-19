@@ -175,22 +175,22 @@ Menyimpan riwayat penggunaan voucher oleh user pada setiap transaksi. Tabel ini 
 
 ### Tabel `vouchers`
 
+Menyimpan data seluruh voucher yang tersedia dalam aplikasi. Voucher digunakan untuk memberikan potongan harga kepada user dengan berbagai aturan seperti minimal pembelian, batas penggunaan, dan periode berlaku.
 
-
-- `id` —
-- `created_by` —
-- `code` —
-- `name` —
-- `type` —
-- `discount_value` —
-- `max_discount` —
-- `min_order_value` —
-- `usage_limit` —
-- `used_count` —
-- `usage_per_user` —
-- `start_date` —
-- `expiry_date` —
-- `is_active` —
+- `id` — Primary key untuk identitas unik setiap voucher
+- `created_by` — ID admin yang membuat voucher
+- `code` — Kode unik voucher yang digunakan oleh user saat transaksi
+- `name` — Nama voucher
+- `type` — Jenis voucher
+- `discount_value` — Nilai diskon yang diberikan (persentase atau jumlah tetap)
+- `max_discount` — Batas maksimal potongan harga (digunakan untuk voucher persentase)
+- `min_order_value` — Minimal total belanja agar voucher dapat digunakan
+- `usage_limit` — Batas total penggunaan voucher oleh semua user
+- `used_count` — Jumlah berapa kali voucher telah digunakan
+- `usage_per_user` — Batas penggunaan voucher untuk setiap user
+- `start_date` — Tanggal mulai berlakunya voucher
+- `expiry_date` — Tanggal berakhirnya voucher
+- `is_active` — Status aktif atau tidaknya voucher
 
 ---
 
