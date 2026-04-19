@@ -255,6 +255,14 @@ Menyimpan data seluruh voucher yang tersedia dalam aplikasi. Voucher digunakan u
 
 ---
 
+### Tabel `vouchers`
+
+- Semua user yang sudah login (**authenticated**) dapat melihat voucher yang aktif (SELECT)
+- Admin memiliki akses penuh (create, read, update, delete) terhadap data voucher
+- Sistem membatasi akses hanya untuk user yang terautentikasi (tidak bisa diakses oleh public/tanpa login)
+
+---
+
 ## 📦 Penjelasan Package yang Digunakan
 
 Aplikasi ini menggunakan beberapa package untuk mendukung pengembangan fitur, pengelolaan data, serta peningkatan tampilan dan pengalaman pengguna.
