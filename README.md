@@ -146,20 +146,21 @@ Menyimpan data utama dari setiap transaksi atau pesanan yang dilakukan oleh user
 
 ### Tabel `users`
 
+Menyimpan data seluruh pengguna aplikasi. Tabel ini juga mendukung sistem loyalty dengan menyimpan poin dan tingkatan membership pengguna.
 
-
-- `id` —
-- `auth_id` —
-- `name` —
-- `email` —
-- `phone` —
-- `role` —
-- `loyalty_points` —
-- `total_earned_points` —
-- `membership_tier` —
-- `created_at` —
+- `id` — Primary key untuk identitas unik setiap user
+- `auth_id` — ID autentikasi dari sistem auth (misalnya Supabase Auth) yang digunakan untuk login
+- `name` — Nama lengkap pengguna
+- `email` — Email pengguna yang digunakan untuk login
+- `phone` — Nomor telepon pengguna
+- `role` — Peran pengguna dalam sistem (user / admin)
+- `loyalty_points` — Jumlah poin yang dimiliki user saat ini
+- `total_earned_points` — Total keseluruhan poin yang pernah didapatkan user (tidak berkurang meskipun digunakan)
+- `membership_tier` — Tingkatan membership user (misalnya: Bronze, Silver, Gold, Platinum)
+- `created_at` — Waktu akun pengguna dibuat
 
 ---
+
 ### Tabel `voucher_usages`
 ### Tabel `vouchers`
 
