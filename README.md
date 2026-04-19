@@ -148,19 +148,10 @@ Admin memiliki kontrol penuh terhadap sistem untuk mengelola operasional Cafe No
   Admin dapat mengubah status pesanan seperti *pending*, *confirmed*, hingga *done*.
 
 - **Kelola Promo & Voucher**  
-  Admin dapat membuat dan mengatur berbagai promo seperti:
-  - Voucher member baru  
-  - Voucher hari besar  
-  - Diskon ulang tahun  
+  Admin dapat membuat dan mengatur berbagai promo yang berlaku.
 
 - **Kelola Sistem Poin**  
   Admin dapat mengatur skema poin yang didapatkan user dari setiap transaksi.
-
-- **Melihat Data Pelanggan**  
-  Admin dapat melihat data user yang terdaftar untuk kebutuhan analisis dan pelayanan.
-
-- **Sinkronisasi dengan POS (LUNA)**  
-  Sistem dapat terintegrasi dengan POS untuk menyelaraskan data transaksi.
 
 ---
 
@@ -174,7 +165,7 @@ User dapat menggunakan aplikasi untuk melakukan pemesanan dan mendapatkan berbag
   User yang baru registrasi otomatis mendapatkan voucher sebagai bentuk promosi awal.
 
 - **Melihat Menu & Detail Menu**  
-  User dapat melihat daftar menu serta informasi detail dari setiap menu.
+  User dapat melihat daftar menu serta informasi detail dari setiap cabang.
 
 - **Membuat Pesanan (CRUD)**  
   User dapat:
@@ -186,7 +177,7 @@ User dapat menggunakan aplikasi untuk melakukan pemesanan dan mendapatkan berbag
 - **Custom Request Pesanan**  
   User dapat menambahkan permintaan khusus seperti tingkat gula, topping, dll.
 
-- **Menggunakan Voucher & Promo**  
+- **Menggunakan Voucher**  
   User dapat menggunakan voucher saat melakukan pembelian.
 
 - **Sistem Poin & Rewards**  
@@ -194,12 +185,6 @@ User dapat menggunakan aplikasi untuk melakukan pemesanan dan mendapatkan berbag
 
 - **Melihat Status Pesanan**  
   User dapat memantau status pesanan secara real-time.
-
-- **Menerima Notifikasi**  
-  User akan menerima notifikasi terkait:
-  - Status pesanan  
-  - Promo terbaru  
-  - Ulang tahun (opsional)  
 
 ---
 
@@ -213,13 +198,10 @@ Fitur yang berlaku untuk seluruh sistem aplikasi.
   Sistem menampilkan menu berdasarkan cabang yang dipilih user.
 
 - **Manajemen Database Terpusat**  
-  Semua data (user, menu, pesanan, promo) tersimpan dalam database secara terstruktur.
+  Semua data (user, menu, pesanan, voucher) tersimpan dalam database secara terstruktur.
 
 - **Antarmuka Interaktif & User-Friendly**  
   Tampilan aplikasi dirancang agar mudah digunakan dan menarik bagi pengguna.
-
-- **Sistem Notifikasi Otomatis**  
-  Sistem mengirimkan notifikasi secara otomatis berdasarkan event tertentu.
 
 ---
 
