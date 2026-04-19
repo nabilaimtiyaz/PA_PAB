@@ -55,27 +55,55 @@ contoh:
 
 ## 📑 Struktur Database
 ---
-### Tabel `profiles`
+### Tabel `branches`
  
-Menyimpan seluruh akun pengguna yang terdaftar pada aplikasi, berikut rinciannya:
+Menyimpan data seluruh cabang Cafe Nomad yang tersedia dalam sistem. Informasi ini digunakan untuk menampilkan pilihan cabang kepada pengguna serta menyesuaikan menu dan operasional berdasarkan lokasi cabang.
  
-- `id` — Primary key bertipe UUID, nilainya sama dengan id akun auth user
-- `display_name` — Nama User yang akan ditampilkan sebagai nickname author pada artikel
-- `created_at` — Waktu profil dibuat, terisi otomatis
+- `id` — Primary key untuk identitas unik setiap cabang
+- `name` — Nama cabang cafe
+- `location` — Lokasi umum cabang cafe
+- `phone` — Nomor telepon cabang yang dapat dihubungi
+- `is_open` — Status operasional cabang (buka/tutup)
+- `open_time` — Jam buka cabang
+- `close_time` — Jam tutup cabang
+- `image_url` — URL gambar atau foto cabang untuk ditampilkan di aplikasi
+- `created_at` — Waktu data cabang dibuat, biasanya terisi otomatis oleh sistem
+- `address` — Alamat lengkap cabang cafe
 ---
 
-### Tabel `articles`
+### Tabel `categories`
+
+Menyimpan data kategori menu pada aplikasi Cafe Nomad. Kategori ini digunakan untuk mengelompokkan menu (misalnya minuman dan makanan) agar lebih mudah ditampilkan dan dicari oleh pengguna.
  
-Menyimpan seluruh artikel yang ditulis oleh pengguna. Setiap artikel terhubung ke user yang membuatnya melalui kolom user_id.
-- `id` — Primary key bertipe UUID, di-generate otomatis oleh database menggunakan `gen_random_uuid()`
-- `title` — Judul artikel, wajib diisi
-- `description` — Deskripsi singkat artikel, opsional
-- `content` — Isi artikel, wajib diisi
-- `author` — Nama author yang diambil, diperoleh dari **display_name** di tabel **profiles**
-- `user_id` — UUID yang merujuk ke akun auth pemilik artikel
-- `status` — Status artikel, default **published**
-- `created_at` — Waktu artikel dibuat, terisi otomatis
-- `updated_at` — Waktu artikel terakhir diubah/edit
+- `id` — Primary key untuk identitas unik setiap kategori
+- `name` — Nama kategori 
+- `icon` — Ikon atau simbol kategori yang digunakan untuk tampilan UI
+- `created_at` — Waktu data kategori dibuat, biasanya terisi otomatis oleh sistem
+
+### Tabel `menu_items`
+
+Menyimpan data seluruh menu yang tersedia di Cafe Nomad. Tabel ini terhubung dengan kategori dan cabang, sehingga setiap menu dapat ditampilkan sesuai jenis dan lokasi cabang yang dipilih oleh pengguna.
+
+- `id` — Primary key untuk identitas unik setiap menu
+- `category_id` — Foreign key yang merujuk ke tabel `categories`, menunjukkan kategori dari menu
+- `branch_id` — Foreign key yang merujuk ke tabel `branches`, menunjukkan cabang tempat menu tersedia
+- `created_by` — ID admin yang menambahkan menu ke dalam sistem
+- `name` — Nama menu (contoh: Teh Tarik, Roti Bakar)
+- `description` — Deskripsi singkat mengenai menu
+- `price` — Harga menu yang tersedia
+- `image_url` — URL gambar menu untuk ditampilkan pada aplikasi
+- `is_available` — Status ketersediaan menu (tersedia / tidak tersedia)
+- `order_count` — Jumlah berapa kali menu telah dipesan (digunakan untuk analisis atau menu populer)
+- `is_featured` — Penanda apakah menu termasuk menu unggulan (highlight di aplikasi)
+- `created_at` — Waktu data menu dibuat, biasanya terisi otomatis
+- `updated_at` — Waktu terakhir data menu diperbarui
+
+
+### Tabel `order_items`
+### Tabel `orders`
+### Tabel `users`
+### Tabel `voucher_usages`
+### Tabel `vouchers`
 
 ## 🔒 Keamanan Database (RLS)
  
