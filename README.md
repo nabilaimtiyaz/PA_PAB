@@ -163,13 +163,13 @@ Menyimpan data seluruh pengguna aplikasi. Tabel ini juga mendukung sistem loyalt
 
 ### Tabel `voucher_usages`
 
+Menyimpan riwayat penggunaan voucher oleh user pada setiap transaksi. Tabel ini digunakan untuk melacak siapa yang menggunakan voucher, kapan digunakan, serta pada pesanan apa voucher tersebut diterapkan.
 
-
-- `id` —
-- `voucher_id` —
-- `user_id` —
-- `order_id` —
-- `used_at` —
+- `id` — Primary key untuk identitas unik setiap penggunaan voucher
+- `voucher_id` — Foreign key yang merujuk ke tabel `vouchers`, menunjukkan voucher yang digunakan
+- `user_id` — Foreign key yang merujuk ke tabel `users`, menunjukkan pengguna yang memakai voucher
+- `order_id` — Foreign key yang merujuk ke tabel `orders`, menunjukkan transaksi tempat voucher digunakan
+- `used_at` — Waktu saat voucher digunakan dalam transaksi
 
 ---
 
