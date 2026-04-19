@@ -127,6 +127,102 @@ Penggunaan package-package tersebut membantu dalam:
   <img width="496" height="853" alt="Image" src="https://github.com/user-attachments/assets/2e4f72b7-fb8c-4284-9a91-ae97e2cf5ade" />
 </details>
 
+---
+
+## ⚙️ Fitur Program
+
+Aplikasi **Nomad+** memiliki beberapa fitur utama yang dibedakan berdasarkan peran pengguna: **Admin**, **User (Pelanggan)**, dan **Fitur Umum**.
+
+---
+
+### 🧑‍💼 1. Fitur untuk Admin
+Admin memiliki kontrol penuh terhadap sistem untuk mengelola operasional Cafe Nomad.
+
+- **Kelola Menu (CRUD)**  
+  Admin dapat menambahkan, mengedit, dan menghapus menu sesuai dengan ketersediaan di setiap cabang.
+
+- **Kelola Pesanan**  
+  Admin dapat melihat seluruh pesanan yang masuk dari user dan memprosesnya.
+
+- **Update Status Pesanan**  
+  Admin dapat mengubah status pesanan seperti *pending*, *confirmed*, hingga *done*.
+
+- **Kelola Promo & Voucher**  
+  Admin dapat membuat dan mengatur berbagai promo seperti:
+  - Voucher member baru  
+  - Voucher hari besar  
+  - Diskon ulang tahun  
+
+- **Kelola Sistem Poin**  
+  Admin dapat mengatur skema poin yang didapatkan user dari setiap transaksi.
+
+- **Melihat Data Pelanggan**  
+  Admin dapat melihat data user yang terdaftar untuk kebutuhan analisis dan pelayanan.
+
+- **Sinkronisasi dengan POS (LUNA)**  
+  Sistem dapat terintegrasi dengan POS untuk menyelaraskan data transaksi.
+
+---
+
+### 👤 2. Fitur untuk User (Pelanggan)
+User dapat menggunakan aplikasi untuk melakukan pemesanan dan mendapatkan berbagai keuntungan.
+
+- **Registrasi & Login**  
+  User dapat membuat akun dan masuk ke dalam sistem dengan validasi data.
+
+- **Mendapat Voucher Member Baru**  
+  User yang baru registrasi otomatis mendapatkan voucher sebagai bentuk promosi awal.
+
+- **Melihat Menu & Detail Menu**  
+  User dapat melihat daftar menu serta informasi detail dari setiap menu.
+
+- **Membuat Pesanan (CRUD)**  
+  User dapat:
+  - Membuat pesanan  
+  - Melihat pesanan  
+  - Mengubah pesanan  
+  - Menghapus pesanan  
+
+- **Custom Request Pesanan**  
+  User dapat menambahkan permintaan khusus seperti tingkat gula, topping, dll.
+
+- **Menggunakan Voucher & Promo**  
+  User dapat menggunakan voucher saat melakukan pembelian.
+
+- **Sistem Poin & Rewards**  
+  User mendapatkan poin dari setiap pembelian yang bisa digunakan sebagai potongan harga.
+
+- **Melihat Status Pesanan**  
+  User dapat memantau status pesanan secara real-time.
+
+- **Menerima Notifikasi**  
+  User akan menerima notifikasi terkait:
+  - Status pesanan  
+  - Promo terbaru  
+  - Ulang tahun (opsional)  
+
+---
+
+### 🖥️ 3. Fitur Umum
+Fitur yang berlaku untuk seluruh sistem aplikasi.
+
+- **Authentication & Validasi Data**  
+  Sistem melakukan validasi saat login dan registrasi untuk menjaga keamanan data.
+
+- **Multi-Branch Menu**  
+  Sistem menampilkan menu berdasarkan cabang yang dipilih user.
+
+- **Manajemen Database Terpusat**  
+  Semua data (user, menu, pesanan, promo) tersimpan dalam database secara terstruktur.
+
+- **Antarmuka Interaktif & User-Friendly**  
+  Tampilan aplikasi dirancang agar mudah digunakan dan menarik bagi pengguna.
+
+- **Sistem Notifikasi Otomatis**  
+  Sistem mengirimkan notifikasi secara otomatis berdasarkan event tertentu.
+
+---
+
 ## 🧩 Widget yang Digunakan
 Aplikasi ini menggunakan berbagai widget Flutter untuk membangun UI yang responsif:
 
