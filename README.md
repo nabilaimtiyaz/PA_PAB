@@ -13,9 +13,13 @@
 ---
 
 ## 📚 Daftar Isi
+- [👥 Profil Anggota](#-profil-anggota)
 - [📝 Deskripsi Aplikasi](#-deskripsi-aplikasi)
 - [⚙️ Fitur Utama](#️-fitur-utama)
 - [🌟 Nilai Tambah](#-nilai-tambah)
+- [📦 Penjelasan Package yang Digunakan](#-penjelasan-package-yang-digunakan)
+- [📊 Use Case Diagram](#-use-case-diagram)
+- [🔄 Flowchart Program](#-flowchart-program)
 - [🧩 Widget yang Digunakan](#-widget-yang-digunakan)
 - [📂 Struktur Folder / Package](#-struktur-folder--package)
 - [🧰 Tech Stack](#-tech-stack)
