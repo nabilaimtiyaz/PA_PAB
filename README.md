@@ -13,7 +13,6 @@
 ---
 
 ## 📚 Daftar Isi
-- [👥 Profil Anggota](#-profil-anggota)
 - [📝 Deskripsi Aplikasi](#-deskripsi-aplikasi)
 - [⚙️ Fitur Utama](#️-fitur-utama)
 - [🌟 Nilai Tambah](#-nilai-tambah)
