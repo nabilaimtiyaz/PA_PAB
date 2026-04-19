@@ -146,9 +146,18 @@ Menyimpan data utama dari setiap transaksi atau pesanan yang dilakukan oleh user
 
 ### Tabel `users`
 
-.
 
 
+- `id` —
+- `auth_id` —
+- `name` —
+- `email` —
+- `phone` —
+- `role` —
+- `loyalty_points` —
+- `total_earned_points` —
+- `membership_tier` —
+- `created_at` —
 
 ---
 ### Tabel `voucher_usages`
