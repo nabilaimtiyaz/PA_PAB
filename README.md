@@ -230,7 +230,30 @@ Menyimpan data seluruh voucher yang tersedia dalam aplikasi. Voucher digunakan u
 
 ---
 
+### Tabel `orders`
 
+- User hanya dapat membuat pesanan menggunakan akunnya sendiri
+- User hanya dapat melihat pesanan miliknya sendiri
+- Admin dapat melihat seluruh pesanan
+- Admin dapat mengupdate status pesanan
+
+---
+
+### Tabel `users`
+
+- User hanya dapat melihat dan mengupdate data miliknya sendiri
+- Admin dapat melihat seluruh data user
+- Admin dapat mengelola (update) data user jika diperlukan
+
+---
+
+### Tabel `voucher_usages`
+
+- User hanya dapat melihat riwayat penggunaan voucher miliknya sendiri
+- Admin dapat melihat seluruh riwayat penggunaan voucher
+- Data hanya dapat ditambahkan oleh sistem saat transaksi terjadi
+
+---
 
 ## 📦 Penjelasan Package yang Digunakan
 
