@@ -162,6 +162,17 @@ Menyimpan data seluruh pengguna aplikasi. Tabel ini juga mendukung sistem loyalt
 ---
 
 ### Tabel `voucher_usages`
+
+
+
+- `id` —
+- `voucher_id` —
+- `user_id` —
+- `order_id` —
+- `used_at` —
+
+---
+
 ### Tabel `vouchers`
 
 ## 🔒 Keamanan Database (RLS)
