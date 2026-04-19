@@ -51,6 +51,40 @@ Melalui aplikasi ini, pengguna dapat dengan mudah melihat menu, melakukan pemesa
 | 13 | **Authentication & Validation** | Sistem melakukan validasi data saat registrasi dan login untuk memastikan keamanan dan keakuratan data pengguna. |
 ---
 
+contoh:
+
+## 📑 Struktur Database
+---
+### Tabel `profiles`
+ 
+Menyimpan seluruh akun pengguna yang terdaftar pada aplikasi, berikut rinciannya:
+ 
+- `id` — Primary key bertipe UUID, nilainya sama dengan id akun auth user
+- `display_name` — Nama User yang akan ditampilkan sebagai nickname author pada artikel
+- `created_at` — Waktu profil dibuat, terisi otomatis
+---
+
+### Tabel `articles`
+ 
+Menyimpan seluruh artikel yang ditulis oleh pengguna. Setiap artikel terhubung ke user yang membuatnya melalui kolom user_id.
+- `id` — Primary key bertipe UUID, di-generate otomatis oleh database menggunakan `gen_random_uuid()`
+- `title` — Judul artikel, wajib diisi
+- `description` — Deskripsi singkat artikel, opsional
+- `content` — Isi artikel, wajib diisi
+- `author` — Nama author yang diambil, diperoleh dari **display_name** di tabel **profiles**
+- `user_id` — UUID yang merujuk ke akun auth pemilik artikel
+- `status` — Status artikel, default **published**
+- `created_at` — Waktu artikel dibuat, terisi otomatis
+- `updated_at` — Waktu artikel terakhir diubah/edit
+
+## 🔒 Keamanan Database (RLS)
+ 
+### Tabel `articles`
+ 
+- Semua user dapat membaca semua artikel yang dipublikasikan (oleh semua user)
+- User hanya dapat membuat artikel menggunakan akunnya sendiri
+- User hanya dapat mengubah dan menghapus artikel miliknya sendiri
+
 ## 📦 Penjelasan Package yang Digunakan
 
 Aplikasi ini menggunakan beberapa package untuk mendukung pengembangan fitur, pengelolaan data, serta peningkatan tampilan dan pengalaman pengguna.
