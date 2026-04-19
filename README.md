@@ -119,29 +119,38 @@ Menyimpan detail item dari setiap pesanan yang dibuat oleh user.
 
 ### Tabel `orders`
 
+Menyimpan data utama dari setiap transaksi atau pesanan yang dilakukan oleh user. Tabel ini menjadi pusat relasi dengan tabel lain seperti `users`, `branches`, `vouchers`, dan `order_items`.
 
-- `id` —
-- `user_id` —
-- `branch_id` —
-- `voucher_id` —
-- `queue_number` —
-- `payment_method` —
-- `status` —
-- `subtotal` —
-- `discount_amount` —
-- `service_fee` —
-- `grand_total` —
-- `points_earned` —
-- `points_used` —
-- `order_type` —
-- `notes` —
-- `created_at` —
-- `voucher_code` —
-- `is_reward_redeem` —
-- `reward_menu_item_id` —
-- `updated_at` —
+- `id` — Primary key untuk identitas unik setiap pesanan
+- `user_id` — Foreign key yang merujuk ke tabel `users`, menunjukkan pemilik pesanan
+- `branch_id` — Foreign key yang merujuk ke tabel `branches`, menunjukkan cabang tempat pesanan dibuat
+- `voucher_id` — Foreign key yang merujuk ke tabel `vouchers`, menunjukkan voucher yang digunakan (jika ada)
+- `queue_number` — Nomor antrean yang dihasilkan sistem untuk proses pengambilan pesanan
+- `payment_method` — Metode pembayaran yang digunakan (cash / non-cash)
+- `status` — Status pesanan (misalnya: *pending*, *confirmed*, *done*)
+- `subtotal` — Total harga sebelum diskon dan biaya tambahan
+- `discount_amount` — Jumlah potongan harga dari voucher atau promo
+- `service_fee` — Biaya tambahan layanan
+- `grand_total` — Total akhir yang harus dibayar oleh user
+- `points_earned` — Jumlah poin yang didapat user dari transaksi ini
+- `points_used` — Jumlah poin yang digunakan dalam transaksi
+- `order_type` — Jenis pesanan (misalnya: dine-in, take-away)
+- `notes` — Catatan tambahan untuk pesanan
+- `created_at` — Waktu pesanan dibuat
+- `voucher_code` — Kode voucher yang digunakan
+- `is_reward_redeem` — Penanda apakah pesanan menggunakan penukaran reward
+- `reward_menu_item_id` — Foreign key ke `menu_items` jika user menukar reward berupa menu
+- `updated_at` — Waktu terakhir data pesanan diperbarui
+
+---
 
 ### Tabel `users`
+
+.
+
+
+
+---
 ### Tabel `voucher_usages`
 ### Tabel `vouchers`
 
