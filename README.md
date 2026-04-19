@@ -196,11 +196,41 @@ Menyimpan data seluruh voucher yang tersedia dalam aplikasi. Voucher digunakan u
 
 ## 🔒 Keamanan Database (RLS)
  
-### Tabel `articles`
+### Tabel `branches`
  
-- Semua user dapat membaca semua artikel yang dipublikasikan (oleh semua user)
-- User hanya dapat membuat artikel menggunakan akunnya sendiri
-- User hanya dapat mengubah dan menghapus artikel miliknya sendiri
+- Admin memiliki akses penuh (create, read, update, delete) terhadap data cabang
+- Semua user yang terautentikasi dapat melihat data cabang
+- Public (tanpa login) juga dapat membaca data cabang
+
+---
+
+### Tabel `categories`
+ 
+- Admin memiliki akses penuh (create, read, update, delete) terhadap kategori
+- Semua user yang terautentikasi dapat melihat kategori
+- Public (tanpa login) juga dapat membaca data kategori
+
+---
+
+### Tabel `menu_items`
+
+- Admin memiliki akses penuh untuk mengelola menu
+- Semua user yang terautentikasi dapat melihat data menu
+- Public juga dapat melihat daftar menu tanpa login
+
+---
+
+### Tabel `order_items`
+
+- User hanya dapat menambahkan item pesanan miliknya sendiri
+- Admin juga dapat menambahkan item pesanan
+- User hanya dapat melihat item pesanan miliknya sendiri
+- Admin dapat melihat seluruh item pesanan
+- Hanya admin yang dapat mengupdate data item pesanan
+
+---
+
+
 
 ## 📦 Penjelasan Package yang Digunakan
 
