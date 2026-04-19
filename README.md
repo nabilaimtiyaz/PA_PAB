@@ -3,7 +3,14 @@
   <img width="500" height="500" alt="Nomad Coffee Logo" src="https://github.com/user-attachments/assets/d39c584e-1d94-4598-bff9-bc53c4e82e46" />
 </p>
 
-<h2 align="center" style="color:#B8001F;">SELAMAT DATANG DI APLIKASI LOYALTY & ORDERING NOMAD</h2>
+<h2 align="center"> Nama Kelompok: <b>NOMADEN </b></h2>
+
+## 👤 Profil Anggota
+| Nayla Camelia Indraswari | Nabila Imtiyaz Agustin | Muhammad Ilyasa’ Izzuddin | Muhammad Reffi Fadillah |
+|--------------------------|------------------------|----------------------------|-------------------------|
+| **NIM:** 2409116009 <br> **Kelas:** Sistem Informasi A '24 <br> [![Camel](https://img.shields.io/badge/-Camel-FFFFFF?logo=github&logoColor=black)](https://github.com/naylacamelia) | **NIM:** 2409116011 <br> **Kelas:** Sistem Informasi A '24 <br> [![Lala](https://img.shields.io/badge/-Lala-FFFFFF?logo=github&logoColor=black)](https://github.com/nabilaimtiyaz) | **NIM:** 2409116033 <br> **Kelas:** Sistem Informasi A '24 <br> [![Ilyasa'](https://img.shields.io/badge/-Ilyasa'-FFFFFF?logo=github&logoColor=black)](https://github.com/Ilyasa810) | **NIM:** 2409116034 <br> **Kelas:** Sistem Informasi A '24 <br> [![Reffi](https://img.shields.io/badge/-Reffi-FFFFFF?logo=github&logoColor=black)](https://github.com/LuthfiDffa) |
+
+---
 
 ## 📚 Daftar Isi
 - [📝 Deskripsi Aplikasi](#-deskripsi-aplikasi)
@@ -12,15 +19,6 @@
 - [🧩 Widget yang Digunakan](#-widget-yang-digunakan)
 - [📂 Struktur Folder / Package](#-struktur-folder--package)
 - [🧰 Tech Stack](#-tech-stack)
-
----
-
-<h2 align="center"> Nama Kelompok: <b>NOMADEN </b></h2>
-
-## 👤 Profil Anggota
-| Nayla Camelia Indraswari | Nabila Imtiyaz Agustin | Muhammad Ilyasa’ Izzuddin | Muhammad Reffi Fadillah |
-|--------------------------|------------------------|----------------------------|-------------------------|
-| **NIM:** 2409116009 <br> **Kelas:** Sistem Informasi A '24 <br> [![Camel](https://img.shields.io/badge/-Camel-FFFFFF?logo=github&logoColor=black)](https://github.com/naylacamelia) | **NIM:** 2409116011 <br> **Kelas:** Sistem Informasi A '24 <br> [![Lala](https://img.shields.io/badge/-Lala-FFFFFF?logo=github&logoColor=black)](https://github.com/nabilaimtiyaz) | **NIM:** 2409116033 <br> **Kelas:** Sistem Informasi A '24 <br> [![Ilyasa'](https://img.shields.io/badge/-Ilyasa'-FFFFFF?logo=github&logoColor=black)](https://github.com/Ilyasa810) | **NIM:** 2409116034 <br> **Kelas:** Sistem Informasi A '24 <br> [![Reffi](https://img.shields.io/badge/-Reffi-FFFFFF?logo=github&logoColor=black)](https://github.com/LuthfiDffa) |
 
 ---
 
