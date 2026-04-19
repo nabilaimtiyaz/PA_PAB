@@ -175,6 +175,25 @@ Menyimpan riwayat penggunaan voucher oleh user pada setiap transaksi. Tabel ini 
 
 ### Tabel `vouchers`
 
+
+
+- `id` —
+- `created_by` —
+- `code` —
+- `name` —
+- `type` —
+- `discount_value` —
+- `max_discount` —
+- `min_order_value` —
+- `usage_limit` —
+- `used_count` —
+- `usage_per_user` —
+- `start_date` —
+- `expiry_date` —
+- `is_active` —
+
+---
+
 ## 🔒 Keamanan Database (RLS)
  
 ### Tabel `articles`
