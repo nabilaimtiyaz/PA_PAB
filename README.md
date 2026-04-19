@@ -1,1 +1,159 @@
-# PA_PAB
+<h1 align="center" style="color:#B8001F;">☕ TEH TARIK NOMAD ☕</h1>
+<p align="center">
+  <img width="500" height="500" alt="Nomad Coffee Logo" src="https://github.com/user-attachments/assets/d39c584e-1d94-4598-bff9-bc53c4e82e46" />
+</p>
+
+<h2 align="center" style="color:#B8001F;">SELAMAT DATANG DI APLIKASI LOYALTY & ORDERING NOMAD</h2>
+
+## 📚 Daftar Isi
+- [📝 Deskripsi Aplikasi](#-deskripsi-aplikasi)
+- [⚙️ Fitur Utama](#️-fitur-utama)
+- [🌟 Nilai Tambah](#-nilai-tambah)
+- [🧩 Widget yang Digunakan](#-widget-yang-digunakan)
+- [📂 Struktur Folder / Package](#-struktur-folder--package)
+- [🧰 Tech Stack](#-tech-stack)
+
+---
+
+<h2 align="center"> Nama Kelompok: <b>NOMADEN </b></h2>
+
+## 👤 Profil Anggota
+| Nayla Camelia Indraswari | Nabila Imtiyaz Agustin | Muhammad Ilyasa’ Izzuddin | Muhammad Reffi Fadillah |
+|--------------------------|------------------------|----------------------------|-------------------------|
+| **NIM:** 2409116009 <br> **Kelas:** Sistem Informasi A '24 <br> [![Camel](https://img.shields.io/badge/-Camel-FFFFFF?logo=github&logoColor=black)](https://github.com/naylacamelia) | **NIM:** 2409116011 <br> **Kelas:** Sistem Informasi A '24 <br> [![Lala](https://img.shields.io/badge/-Lala-FFFFFF?logo=github&logoColor=black)](https://github.com/nabilaimtiyaz) | **NIM:** 2409116033 <br> **Kelas:** Sistem Informasi A '24 <br> [![Ilyasa'](https://img.shields.io/badge/-Ilyasa'-FFFFFF?logo=github&logoColor=black)](https://github.com/Ilyasa810) | **NIM:** 2409116034 <br> **Kelas:** Sistem Informasi A '24 <br> [![Reffi](https://img.shields.io/badge/-Reffi-FFFFFF?logo=github&logoColor=black)](https://github.com/LuthfiDffa) |
+
+---
+
+## 📝 Deskripsi Aplikasi
+**Nomad+** adalah aplikasi digital yang dirancang untuk membantu operasional Cafe Nomad dalam mengelola menu, pesanan, serta interaksi dengan pelanggan secara lebih efisien. Aplikasi ini menyediakan berbagai fitur seperti pemesanan menu, sistem poin, serta voucher promosi yang bertujuan untuk meningkatkan pengalaman dan loyalitas pelanggan.
+
+Melalui aplikasi ini, pengguna dapat dengan mudah melihat menu, melakukan pemesanan, serta memanfaatkan promo yang tersedia. Di sisi lain, admin dapat mengelola data menu, pesanan, dan promo secara terpusat sehingga operasional cafe menjadi lebih terstruktur dan efektif.
+
+---
+
+## ⚙️ Fitur Utama
+
+| No. | Fitur | Deskripsi |
+|-----|-------|-----------|
+| 1 | **Multi-Branch Selection** | Memungkinkan pengguna memilih cabang toko untuk mendapatkan daftar menu yang sesuai dengan ketersediaan lokal. |
+| 2 | **Membership Tiering** | Sistem kasta (Bronze, Silver, Gold, Platinum) yang memberikan *multiplier* poin lebih besar seiring meningkatnya transaksi. |
+| 3 | **Point & Rewards** | Pengguna dapat mengumpulkan poin dari setiap pembelian dan menukarkannya sebagai potongan harga (Redeem) saat checkout. |
+| 4 | **Advanced Voucher System** | Validasi kode promo unik dengan parameter minimal belanja dan batasan jumlah penggunaan per pengguna. |
+| 5 | **Real-time Queue Number** | Pembuatan nomor antrean otomatis setelah transaksi berhasil untuk memudahkan proses pengambilan pesanan. |
+| 6 | **Status History** | Pelacakan riwayat pesanan mulai dari *pending*, *confirmed*, hingga *done*. |
+| 7 | **Order Management (CRUD)** | Pengguna dapat membuat, melihat, mengubah, dan menghapus pesanan sebelum diproses oleh sistem. |
+| 8 | **Admin Dashboard Management** | Admin dapat mengelola menu, pesanan, promo, dan sistem poin secara terpusat melalui dashboard. |
+| 9 | **Menu Management System** | Admin dapat menambahkan, mengedit, dan menghapus menu sesuai dengan ketersediaan di setiap cabang. |
+| 10 | **Notification System** | Pengguna menerima notifikasi terkait status pesanan, promo terbaru, dan event khusus seperti ulang tahun. |
+| 11 | **Birthday Reward System** | Sistem memberikan voucher atau promo khusus kepada pengguna pada hari ulang tahun sebagai bentuk loyalitas. |
+| 12 | **Custom Order Request** | Pengguna dapat menambahkan permintaan khusus pada pesanan seperti tingkat gula atau preferensi lainnya. |
+| 13 | **Authentication & Validation** | Sistem melakukan validasi data saat registrasi dan login untuk memastikan keamanan dan keakuratan data pengguna. |
+---
+
+## 📦 Penjelasan Package yang Digunakan
+
+Aplikasi ini menggunakan beberapa package untuk mendukung pengembangan fitur, pengelolaan data, serta peningkatan tampilan dan pengalaman pengguna.
+
+### 🔹 Package Utama (Wajib / Core System)
+
+1. **GetX (`get`)**  
+   Digunakan sebagai *state management* untuk mengatur data dan logika aplikasi secara efisien.  
+   GetX membantu dalam mengelola perubahan data secara real-time, navigasi antar halaman, serta menampilkan notifikasi seperti snackbar.
+
+2. **Supabase (`supabase_flutter`)**  
+   Digunakan sebagai backend service yang menyediakan database dan autentikasi.  
+   Supabase memungkinkan aplikasi untuk menyimpan data seperti user, menu, pesanan, dan voucher secara online serta melakukan operasi CRUD.
+
+3. **Environment Config (`flutter_dotenv`)**  
+   Digunakan untuk menyimpan konfigurasi penting seperti API URL dan API Key agar lebih aman dan tidak ditulis langsung di dalam kode.
+
+---
+
+### 🌟 Package Nilai Tambah (Di luar Praktikum)
+
+4. **Google Fonts (`google_fonts`)**  
+   Digunakan untuk menerapkan jenis font kustom sehingga tampilan aplikasi menjadi lebih menarik, konsisten, dan memiliki identitas visual yang kuat.
+
+5. **Font Awesome Icons (`font_awesome_flutter`)**  
+   Digunakan untuk menampilkan ikon-ikon yang lebih variatif dan profesional pada menu, tombol, dan fitur aplikasi.
+
+6. **Data Formatting (`intl`)**  
+   Digunakan untuk memformat data seperti mata uang (Rupiah) dan tanggal agar lebih mudah dibaca dan sesuai dengan format lokal Indonesia.
+
+7. **Loading Animation (`flutter_spinkit`)**  
+   Digunakan untuk menampilkan animasi loading yang lebih interaktif saat aplikasi mengambil data, sehingga meningkatkan pengalaman pengguna.
+
+8. **Image Picker (`image_picker`)**  
+   Digunakan untuk mengambil gambar dari galeri atau kamera perangkat.  
+   Pada aplikasi ini, image_picker dimanfaatkan untuk mendukung fitur seperti upload foto profil pengguna atau gambar menu oleh admin, sehingga data yang ditampilkan menjadi lebih interaktif dan menarik.
+
+---
+
+Penggunaan package-package tersebut membantu dalam:
+- Mempermudah pengelolaan state dan data
+- Menghubungkan aplikasi dengan database secara efisien
+- Meningkatkan tampilan UI/UX aplikasi
+- Memberikan pengalaman pengguna yang lebih baik dan interaktif
+
+---
+
+## 📈 Use Case Diagram
+
+<details>
+  <summary><b>Use Case</b></summary>
+  <img width="1915" height="747" alt="Image" src="https://github.com/user-attachments/assets/e82eebd9-d0e7-4258-aef2-2d8ac1aa1479" />
+</details>
+
+## 🔁 Flowchart Program
+
+<details>
+  <summary><b>1. Menu Login</b></summary>
+  <img width="446" height="755" alt="Image" src="https://github.com/user-attachments/assets/102e23b9-e9cc-455d-b436-6221ef21394c" />
+</details>
+
+<details>
+  <summary><b>2. Menu Register</b></summary>
+  <img width="197" height="521" alt="Image" src="https://github.com/user-attachments/assets/f8b4c209-c1f4-4c5b-9e02-c824c19a737e" />
+</details>
+
+<details>
+  <summary><b>3. Menu User</b></summary>
+  <img width="774" height="858" alt="Image" src="https://github.com/user-attachments/assets/9b28dfae-9cc4-4288-aef3-43bbccac9a64" />
+</details>
+
+<details>
+  <summary><b>4. Menu Admin</b></summary>
+  <img width="496" height="853" alt="Image" src="https://github.com/user-attachments/assets/2e4f72b7-fb8c-4284-9a91-ae97e2cf5ade" />
+</details>
+
+## 🧩 Widget yang Digunakan
+Aplikasi ini menggunakan berbagai widget Flutter untuk membangun UI yang responsif:
+
+* **Layouting**: `Scaffold`, `Stack`, `Column`, `Row`, `Padding`, dan `SizedBox`.
+* **Scrolling**: `ListView.builder` dan `GridView` untuk efisiensi render daftar menu dan riwayat.
+* **Styling**: `LinearGradient` (digunakan pada kartu member) dan `BoxDecoration` untuk kustomisasi kartu menu.
+* **Stateful UI**: `Obx` dari GetX untuk mendengarkan perubahan pada keranjang belanja dan poin secara reaktif.
+* **Feedback**: `Get.snackbar` untuk menampilkan pesan sukses/gagal pada proses update profil dan voucher.
+
+---
+
+## 📂 Struktur Folder / Package
+Proyek ini menggunakan pola arsitektur yang terorganisir:
+* `lib/core/`: Berisi konfigurasi warna, gaya teks, dan state global (`AppStateController`).
+* `lib/data/datasources/`: Berisi logic komunikasi langsung ke Supabase (`RemoteDatasource`).
+* `lib/data/models/`: Definisi data (User, Menu, Order, Voucher) dan factory methods `fromMap`.
+* `lib/controllers/`: Logic bisnis aplikasi (Auth, Profile, Cart, Voucher).
+* `lib/presentation/`: Berisi folder `screens` dan `widgets` untuk komponen UI.
+
+---
+
+## 🧰 Tech Stack
+* **Framework**: [Flutter](https://flutter.dev/)
+* **State Management**: [GetX](https://pub.dev/packages/get)
+* **Backend**: [Supabase](https://supabase.com/)
+* **Database**: PostgreSQL
+* **Library Lainnya**: Google Fonts, Font Awesome Flutter, Intl, Flutter Dotenv.
+
+<p align="center">
+  <b>Developed for Teh Tarik Nomad © 2024</b>
+</p>
