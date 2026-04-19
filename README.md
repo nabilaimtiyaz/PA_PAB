@@ -54,7 +54,7 @@ Melalui aplikasi ini, pengguna dapat dengan mudah melihat menu, melakukan pemesa
 
 Aplikasi ini menggunakan beberapa package untuk mendukung pengembangan fitur, pengelolaan data, serta peningkatan tampilan dan pengalaman pengguna.
 
-### 🔹 Package Utama (Wajib / Core System)
+### 🔹 Package Utama 
 
 1. **GetX (`get`)**  
    Digunakan sebagai *state management* untuk mengatur data dan logika aplikasi secara efisien.  
@@ -69,7 +69,7 @@ Aplikasi ini menggunakan beberapa package untuk mendukung pengembangan fitur, pe
 
 ---
 
-### 🌟 Package Nilai Tambah (Di luar Praktikum)
+### 🌟 Package Nilai Tambah 
 
 4. **Google Fonts (`google_fonts`)**  
    Digunakan untuk menerapkan jenis font kustom sehingga tampilan aplikasi menjadi lebih menarik, konsisten, dan memiliki identitas visual yang kuat.
