@@ -80,6 +80,8 @@ Menyimpan data kategori menu pada aplikasi Cafe Nomad. Kategori ini digunakan un
 - `icon` — Ikon atau simbol kategori yang digunakan untuk tampilan UI
 - `created_at` — Waktu data kategori dibuat, biasanya terisi otomatis oleh sistem
 
+---
+
 ### Tabel `menu_items`
 
 Menyimpan data seluruh menu yang tersedia di Cafe Nomad. Tabel ini terhubung dengan kategori dan cabang, sehingga setiap menu dapat ditampilkan sesuai jenis dan lokasi cabang yang dipilih oleh pengguna.
@@ -98,6 +100,7 @@ Menyimpan data seluruh menu yang tersedia di Cafe Nomad. Tabel ini terhubung den
 - `created_at` — Waktu data menu dibuat, biasanya terisi otomatis
 - `updated_at` — Waktu terakhir data menu diperbarui
 
+---
 
 ### Tabel `order_items`
 
@@ -112,7 +115,32 @@ Menyimpan detail item dari setiap pesanan yang dibuat oleh user.
 - `menu_name_snapshot` — Nama menu yang disimpan saat transaksi (untuk menjaga konsistensi data jika nama menu berubah di masa depan)
 - `subtotal` — Total harga untuk item tersebut (quantity × price)
 
+---
+
 ### Tabel `orders`
+
+
+- `id` —
+- `user_id` —
+- `branch_id` —
+- `voucher_id` —
+- `queue_number` —
+- `payment_method` —
+- `status` —
+- `subtotal` —
+- `discount_amount` —
+- `service_fee` —
+- `grand_total` —
+- `points_earned` —
+- `points_used` —
+- `order_type` —
+- `notes` —
+- `created_at` —
+- `voucher_code` —
+- `is_reward_redeem` —
+- `reward_menu_item_id` —
+- `updated_at` —
+
 ### Tabel `users`
 ### Tabel `voucher_usages`
 ### Tabel `vouchers`
