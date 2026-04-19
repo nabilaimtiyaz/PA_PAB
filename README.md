@@ -100,6 +100,18 @@ Menyimpan data seluruh menu yang tersedia di Cafe Nomad. Tabel ini terhubung den
 
 
 ### Tabel `order_items`
+
+Menyimpan detail item dari setiap pesanan yang dibuat oleh user.
+
+- `id` — Primary key untuk identitas unik setiap item pesanan
+- `order_id` — Foreign key yang merujuk ke tabel `orders`, menunjukkan pesanan utama
+- `menu_item_id` — Foreign key yang merujuk ke tabel `menu_items`, menunjukkan menu yang dipesan
+- `quantity` — Jumlah item menu yang dipesan
+- `notes` — Catatan atau request khusus dari user (misalnya tingkat gula, tanpa es, dll)
+- `price` — Harga satuan menu saat dipesan
+- `menu_name_snapshot` — Nama menu yang disimpan saat transaksi (untuk menjaga konsistensi data jika nama menu berubah di masa depan)
+- `subtotal` — Total harga untuk item tersebut (quantity × price)
+
 ### Tabel `orders`
 ### Tabel `users`
 ### Tabel `voucher_usages`
